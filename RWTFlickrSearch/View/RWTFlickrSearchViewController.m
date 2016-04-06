@@ -12,7 +12,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *searchButton;
 @property (weak, nonatomic) IBOutlet UITableView *searchHistoryTable;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *loadingIndicator;
-//This is a weak reference; the View references the ViewModel, but doesn’t own it
+// weak弱引用; 视图控制器reference(引用)ViewModel, 但并不own it.
 @property (weak, nonatomic) RWTFlickrSearchViewModel *viewModel;
 
 @end
@@ -43,7 +43,10 @@
 - (void)bindViewModel
 {
     self.title = self.viewModel.title;
-    self.searchTextField.text = self.viewModel.searchText;
+    // 利用RAC宏将searchTextField的rac_textSignal信号与_viewModel的searchText属性绑定 
+    RAC(self.viewModel, searchText) = self.searchTextField.rac_textSignal;
+    // 将UI操作excuteSearch与searchButton绑定
+    self.searchButton.rac_command = self.viewModel.excuteSearch;
 }
 
 @end

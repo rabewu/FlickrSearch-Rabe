@@ -7,10 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
 
 @interface RWTFlickrSearchViewModel : NSObject
 
 @property (nonatomic, strong) NSString *searchText;
 @property (nonatomic, strong) NSString *title;
+@property (nonatomic, strong) RACCommand *excuteSearch;
 
 @end
