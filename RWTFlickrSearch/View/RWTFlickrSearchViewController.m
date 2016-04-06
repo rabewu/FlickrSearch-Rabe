@@ -43,10 +43,22 @@
 - (void)bindViewModel
 {
     self.title = self.viewModel.title;
+    
     // 利用RAC宏将searchTextField的rac_textSignal信号与_viewModel的searchText属性绑定 
     RAC(self.viewModel, searchText) = self.searchTextField.rac_textSignal;
+    
     // 将UI操作excuteSearch与searchButton绑定
     self.searchButton.rac_command = self.viewModel.excuteSearch;
+    
+    // self.viewModel.excuteSearch.executing执行按钮操作与否的状态
+    RAC([UIApplication sharedApplication], networkActivityIndicatorVisible) =
+        self.viewModel.excuteSearch.executing;
+    RAC(self.loadingIndicator, hidden) = self.viewModel.excuteSearch.executing.not;
+    
+    // 当搜索执行时隐藏键盘
+    [self.viewModel.excuteSearch.executionSignals subscribeNext:^(id x) {
+        [self.searchTextField resignFirstResponder];
+    }];
 }
 
 @end
