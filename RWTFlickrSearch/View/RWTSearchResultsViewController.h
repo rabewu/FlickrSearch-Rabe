@@ -4,7 +4,10 @@
 //  The search results screen that shows a table of images from Flickr
 
 @import UIKit;
+#import "RWTSearchResultsViewModel.h"
 
 @interface RWTSearchResultsViewController : UIViewController
+
+- (instancetype)initWithViewModel:(RWTSearchResultsViewModel *)viewModel;
 
 @end

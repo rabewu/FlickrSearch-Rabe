@@ -13,6 +13,9 @@
 		17E2ABC21CB4E9A6003C4C4E /* RWTViewModelServicesImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E2ABC11CB4E9A6003C4C4E /* RWTViewModelServicesImpl.m */; };
 		17E2ABC51CB4F205003C4C4E /* RWTFlickrPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E2ABC41CB4F205003C4C4E /* RWTFlickrPhoto.m */; };
 		17E2ABC81CB4F2E6003C4C4E /* RWTFlickrSearchResults.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E2ABC71CB4F2E6003C4C4E /* RWTFlickrSearchResults.m */; };
+		17E2ABCB1CB5F1E6003C4C4E /* RWTSearchResultsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E2ABCA1CB5F1E6003C4C4E /* RWTSearchResultsViewModel.m */; };
+		17E2ABCE1CB608B6003C4C4E /* RWTFlickrPhotoMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E2ABCD1CB608B6003C4C4E /* RWTFlickrPhotoMetadata.m */; };
+		17E2ABD11CB60A6F003C4C4E /* RWTSearchResultsItemViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E2ABD01CB60A6F003C4C4E /* RWTSearchResultsItemViewModel.m */; };
 		728550B5193E52740032A754 /* CETableViewBindingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 728550B4193E52740032A754 /* CETableViewBindingHelper.m */; };
 		72E40170192BFFCE00354806 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E4016F192BFFCE00354806 /* Foundation.framework */; };
 		72E40172192BFFCE00354806 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E40171192BFFCE00354806 /* CoreGraphics.framework */; };
@@ -64,6 +67,12 @@
 		17E2ABC41CB4F205003C4C4E /* RWTFlickrPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RWTFlickrPhoto.m; path = RWTFlickrSearch/View/RWTFlickrPhoto.m; sourceTree = SOURCE_ROOT; };
 		17E2ABC61CB4F2E6003C4C4E /* RWTFlickrSearchResults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RWTFlickrSearchResults.h; path = RWTFlickrSearch/View/RWTFlickrSearchResults.h; sourceTree = SOURCE_ROOT; };
 		17E2ABC71CB4F2E6003C4C4E /* RWTFlickrSearchResults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RWTFlickrSearchResults.m; path = RWTFlickrSearch/View/RWTFlickrSearchResults.m; sourceTree = SOURCE_ROOT; };
+		17E2ABC91CB5F1E6003C4C4E /* RWTSearchResultsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RWTSearchResultsViewModel.h; path = RWTFlickrSearch/View/RWTSearchResultsViewModel.h; sourceTree = SOURCE_ROOT; };
+		17E2ABCA1CB5F1E6003C4C4E /* RWTSearchResultsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RWTSearchResultsViewModel.m; path = RWTFlickrSearch/View/RWTSearchResultsViewModel.m; sourceTree = SOURCE_ROOT; };
+		17E2ABCC1CB608B6003C4C4E /* RWTFlickrPhotoMetadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RWTFlickrPhotoMetadata.h; path = RWTFlickrSearch/View/RWTFlickrPhotoMetadata.h; sourceTree = SOURCE_ROOT; };
+		17E2ABCD1CB608B6003C4C4E /* RWTFlickrPhotoMetadata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RWTFlickrPhotoMetadata.m; path = RWTFlickrSearch/View/RWTFlickrPhotoMetadata.m; sourceTree = SOURCE_ROOT; };
+		17E2ABCF1CB60A6F003C4C4E /* RWTSearchResultsItemViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RWTSearchResultsItemViewModel.h; path = RWTFlickrSearch/View/RWTSearchResultsItemViewModel.h; sourceTree = SOURCE_ROOT; };
+		17E2ABD01CB60A6F003C4C4E /* RWTSearchResultsItemViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RWTSearchResultsItemViewModel.m; path = RWTFlickrSearch/View/RWTSearchResultsItemViewModel.m; sourceTree = SOURCE_ROOT; };
 		4485F3E3E8D1758B19B08A38 /* Pods-RWTFlickrSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RWTFlickrSearch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RWTFlickrSearch/Pods-RWTFlickrSearch.debug.xcconfig"; sourceTree = "<group>"; };
 		4AFB65DF25FEF7B67A1E551A /* libPods-RWTFlickrSearch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RWTFlickrSearch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		728550B2193E52740032A754 /* CEReactiveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEReactiveView.h; sourceTree = "<group>"; };
@@ -242,6 +251,10 @@
 				17E2ABBD1CB4E822003C4C4E /* RWTViewModelServices.h */,
 				17E2ABC01CB4E9A6003C4C4E /* RWTViewModelServicesImpl.h */,
 				17E2ABC11CB4E9A6003C4C4E /* RWTViewModelServicesImpl.m */,
+				17E2ABC91CB5F1E6003C4C4E /* RWTSearchResultsViewModel.h */,
+				17E2ABCA1CB5F1E6003C4C4E /* RWTSearchResultsViewModel.m */,
+				17E2ABCF1CB60A6F003C4C4E /* RWTSearchResultsItemViewModel.h */,
+				17E2ABD01CB60A6F003C4C4E /* RWTSearchResultsItemViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -250,10 +263,12 @@
 			isa = PBXGroup;
 			children = (
 				17E2ABB71CB4E75A003C4C4E /* RWTFlickrSearch.h */,
-				17E2ABBA1CB4E7B5003C4C4E /* RWTFlickrSearchImpl.h */,
-				17E2ABBB1CB4E7B5003C4C4E /* RWTFlickrSearchImpl.m */,
 				17E2ABC31CB4F205003C4C4E /* RWTFlickrPhoto.h */,
 				17E2ABC41CB4F205003C4C4E /* RWTFlickrPhoto.m */,
+				17E2ABCC1CB608B6003C4C4E /* RWTFlickrPhotoMetadata.h */,
+				17E2ABCD1CB608B6003C4C4E /* RWTFlickrPhotoMetadata.m */,
+				17E2ABBA1CB4E7B5003C4C4E /* RWTFlickrSearchImpl.h */,
+				17E2ABBB1CB4E7B5003C4C4E /* RWTFlickrSearchImpl.m */,
 				17E2ABC61CB4F2E6003C4C4E /* RWTFlickrSearchResults.h */,
 				17E2ABC71CB4F2E6003C4C4E /* RWTFlickrSearchResults.m */,
 			);
@@ -430,11 +445,14 @@
 				72E4017C192BFFCE00354806 /* main.m in Sources */,
 				72E401B9192C03AB00354806 /* RWTSearchResultsViewController.m in Sources */,
 				728550B5193E52740032A754 /* CETableViewBindingHelper.m in Sources */,
+				17E2ABCB1CB5F1E6003C4C4E /* RWTSearchResultsViewModel.m in Sources */,
+				17E2ABD11CB60A6F003C4C4E /* RWTSearchResultsItemViewModel.m in Sources */,
 				72E401B4192C03AB00354806 /* RWTFlickrSearchViewController.m in Sources */,
 				17E2ABBC1CB4E7B5003C4C4E /* RWTFlickrSearchImpl.m in Sources */,
 				17E2ABC21CB4E9A6003C4C4E /* RWTViewModelServicesImpl.m in Sources */,
 				17E2ABB61CB4BA58003C4C4E /* RWTFlickrSearchViewModel.m in Sources */,
 				17E2ABC51CB4F205003C4C4E /* RWTFlickrPhoto.m in Sources */,
+				17E2ABCE1CB608B6003C4C4E /* RWTFlickrPhotoMetadata.m in Sources */,
 				17E2ABC81CB4F2E6003C4C4E /* RWTFlickrSearchResults.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

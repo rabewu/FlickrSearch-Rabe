@@ -15,7 +15,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" alpha="0.5499999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9KX-Yp-LqP">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="139"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
                     </imageView>
                     <view alpha="0.75000000000000022" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l2E-QG-zys">
                         <rect key="frame" x="0.0" y="35" width="320" height="33"/>

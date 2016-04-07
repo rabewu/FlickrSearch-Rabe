@@ -8,19 +8,22 @@
 
 #import "RWTViewModelServicesImpl.h"
 #import "RWTFlickrSearchImpl.h"
+#import "RWTSearchResultsViewController.h"
 
 @interface RWTViewModelServicesImpl ()
 
 @property (nonatomic, strong) RWTFlickrSearchImpl *searchService;
+@property (nonatomic, weak) UINavigationController *navigationController;
 
 @end
 
 @implementation RWTViewModelServicesImpl
 
-- (instancetype)init
+- (instancetype)initWithNavigationController:(UINavigationController *)navigationController
 {
     if (self = [super init]) {
         _searchService = [RWTFlickrSearchImpl new];
+        _navigationController = navigationController;
     }
     return self;
 }
@@ -28,6 +31,19 @@
 - (id<RWTFlickrSearch>)getFlickrSearchService
 {
     return self.searchService;
+}
+
+- (void)pushViewModel:(id)viewModel
+{
+    id viewController;
+    
+    if ([viewModel isKindOfClass:RWTSearchResultsViewModel.class]) {
+        viewController = [[RWTSearchResultsViewController alloc] initWithViewModel:viewModel];
+    }
+    else {
+        NSLog(@"an unkown ViewModel was pushed!");
+    }
+    [self.navigationController pushViewController:viewController animated:YES];
 }
 
 @end

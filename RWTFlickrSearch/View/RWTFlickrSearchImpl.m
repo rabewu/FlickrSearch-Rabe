@@ -59,6 +59,12 @@
     }];
 }
 
+- (RACSignal *)flickrImageMetadata:(NSString *)identifier
+{
+    //TODO:此处为请求图片favorites&comments的API请求
+    return nil;
+}
+
 - (RACSignal *)signalFromAPIMethod:(NSString *)method
                          arguments:(NSDictionary *)args
                          transform:(id (^)(NSDictionary *response))block

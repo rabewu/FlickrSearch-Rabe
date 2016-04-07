@@ -14,5 +14,6 @@
 @protocol RWTViewModelServices <NSObject>
 
 - (id<RWTFlickrSearch>)getFlickrSearchService;
+- (void)pushViewModel:(id)viewModel;
 
 @end

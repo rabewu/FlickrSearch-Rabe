@@ -18,7 +18,7 @@
                         <rect key="frame" x="142" y="81" width="37" height="37"/>
                     </activityIndicatorView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V9j-dS-aVT">
-                        <rect key="frame" x="0.0" y="-40" width="320" height="280"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="206"/>
                     </imageView>
                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lzc-mC-Y1P">
                         <rect key="frame" x="0.0" y="173" width="320" height="33"/>
