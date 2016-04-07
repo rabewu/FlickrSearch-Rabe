@@ -246,11 +246,11 @@
 		72E401C0192C82C100354806 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				17E2ABB41CB4BA58003C4C4E /* RWTFlickrSearchViewModel.h */,
-				17E2ABB51CB4BA58003C4C4E /* RWTFlickrSearchViewModel.m */,
 				17E2ABBD1CB4E822003C4C4E /* RWTViewModelServices.h */,
 				17E2ABC01CB4E9A6003C4C4E /* RWTViewModelServicesImpl.h */,
 				17E2ABC11CB4E9A6003C4C4E /* RWTViewModelServicesImpl.m */,
+				17E2ABB41CB4BA58003C4C4E /* RWTFlickrSearchViewModel.h */,
+				17E2ABB51CB4BA58003C4C4E /* RWTFlickrSearchViewModel.m */,
 				17E2ABC91CB5F1E6003C4C4E /* RWTSearchResultsViewModel.h */,
 				17E2ABCA1CB5F1E6003C4C4E /* RWTSearchResultsViewModel.m */,
 				17E2ABCF1CB60A6F003C4C4E /* RWTSearchResultsItemViewModel.h */,
@@ -263,12 +263,12 @@
 			isa = PBXGroup;
 			children = (
 				17E2ABB71CB4E75A003C4C4E /* RWTFlickrSearch.h */,
+				17E2ABBA1CB4E7B5003C4C4E /* RWTFlickrSearchImpl.h */,
+				17E2ABBB1CB4E7B5003C4C4E /* RWTFlickrSearchImpl.m */,
 				17E2ABC31CB4F205003C4C4E /* RWTFlickrPhoto.h */,
 				17E2ABC41CB4F205003C4C4E /* RWTFlickrPhoto.m */,
 				17E2ABCC1CB608B6003C4C4E /* RWTFlickrPhotoMetadata.h */,
 				17E2ABCD1CB608B6003C4C4E /* RWTFlickrPhotoMetadata.m */,
-				17E2ABBA1CB4E7B5003C4C4E /* RWTFlickrSearchImpl.h */,
-				17E2ABBB1CB4E7B5003C4C4E /* RWTFlickrSearchImpl.m */,
 				17E2ABC61CB4F2E6003C4C4E /* RWTFlickrSearchResults.h */,
 				17E2ABC71CB4F2E6003C4C4E /* RWTFlickrSearchResults.m */,
 			);
